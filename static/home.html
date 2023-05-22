@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Events Search</title>
+    <link rel="stylesheet" href="./static/style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Merriweatherlight' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Asap:wght@100&family=Lato:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700&display=swap" rel="stylesheet">  
+</head>
+  <body>
+    <div class="bg-text">
+      <h1 class="header">Events Search</h1>
+      <hr />
+      <div class="form">
+        <form id="form">
+        </br>
+          <label class="keyword required-field" for="Keyword">Keyword</label><br />
+          <input class="keywordinput" type="text" id="keyword" name="keyword" required/>
+          <div class="divide">
+            <div class="divideone">
+              <label class="keyword required-field" for="Keyword">Distance (miles)</label
+              ><br />
+              <input
+                class="inputone"
+                type="number"
+                id="distance"
+                name="distance"
+                placeholder="10"
+              />
+            </div>
+            <div class="dividetwo">
+              <label class="keyword required-field" for="Category">Category</label><br />
+              <select class="inputtwo" id="category" name="category">
+                <option class="optioncolor" value="default" selected>Default</option>
+                <option class="optioncolor" value="music">Music</option>
+                <option class="optioncolor" value="sports">Sports</option>
+                <option class="optioncolor" value="artsTheatre">
+                  Arts & Theatre
+                </option>
+                <option class="optioncolor" value="film">Film</option>
+                <option class="optioncolor" value="miscellaneous">
+                  Miscellaneous
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="divide1">
+            <label class="keyword required-field" for="location">Location</label>
+            <input class="checkbox1" type="checkbox" id="locationcheck" name="locationcheck" onclick="myFunction()" />
+            <label class="checkbox" for="Keyword">Auto-Detect Location</label>
+          </div>
+          <input class="keywordinput" type="text" id="location" name="location" required/>
+          <div class="dividebutton">
+            <button class="searchbutton" onClick="onClickSearch()">SEARCH</button>
+            <button class="clearbutton" onClick="clearSeach()" type="button">CLEAR</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    <div id="block1" class="block1"></div>
+    <div id="block2" class="block2"></div>
+    <div id="block3" class="block3"></div>
+    <div class="block4" id="block4"></div>
+    <script src="./static/script.js"></script>
+  </body>
+</html>

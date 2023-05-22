@@ -1,0 +1,537 @@
+html {
+  background: url("background.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}
+body {
+  font-family: "Merriweather";
+  /* font-family: "arial"; */
+  /* font-family: "Spectral", serif; */
+  font-family: "Spectral", serif;
+  /* font-family: "Lato", sans-serif; */
+  margin: 0;
+  padding: 0;
+  top: 0;
+  /* height: 100vh; */
+  position: relative;
+}
+
+.block1 {
+  height: auto;
+  width: auto;
+  margin-bottom: 9vh;
+}
+
+.block2 {
+  height: auto;
+  width: auto;
+  margin-top: 16vh;
+}
+
+.block3 {
+  height: auto;
+  width: auto;
+  margin-top: 2vh;
+}
+
+.block4 {
+  height: auto;
+  width: auto;
+  margin-top: 4vh;
+  /* overflow: auto; */
+  padding-bottom: 7vh;
+  /* bottom: 10vh; */
+  /* position: initial; */
+}
+
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(211, 211, 211, 0.2);
+  color: white;
+  font-weight: bold;
+  border-radius: 16px;
+  position: relative;
+  /* top: 29%; */
+  left: 29%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+  width: 40%;
+  height: auto;
+  padding: 10px 20px 22px 20px;
+  backdrop-filter: blur(9px);
+  /* margin-top: 222px; */
+  margin: 0px;
+  margin-top: 36px;
+}
+
+hr {
+  background: white;
+  height: 1px;
+  border: 0;
+  margin: 0px;
+}
+
+.header {
+  font-size: 34px;
+  font-weight: 100;
+  margin: 0px;
+  text-align: center;
+}
+
+.keyword {
+  color: rgb(130, 245, 218);
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}
+
+.keywordinput {
+  background: none;
+  border: white solid 0.1em;
+  border-width: thin;
+  /* border: 1px solid rgba(255, 255, 255); */
+  width: 97%;
+  border-radius: 7px;
+  height: 27px;
+  margin-top: 3px;
+  color: white;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.required-field::after {
+  content: "*";
+  color: red;
+}
+
+.divide {
+  display: flex;
+  margin-top: 10px;
+}
+
+.dividetwo {
+  width: 50%;
+  margin-left: 140px;
+}
+
+.divideone {
+  width: 30%;
+}
+
+.inputone {
+  background: none;
+  border: white solid 0.1em;
+  border-width: thin;
+  width: 100%;
+  border-radius: 7px;
+  height: 25px;
+  margin-top: 3px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  /* font-size: 15px; */
+  padding-left: 8px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.inputtwo {
+  background: none;
+  border: white solid 0.1em;
+  border-width: thin;
+  width: 100%;
+  border-radius: 7px;
+  height: 30px;
+  margin-top: 3px;
+  color: white;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  /* font-size: 15px; */
+  padding-left: 8px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  width: 11px;
+  height: 12px;
+}
+
+.checkbox {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.checkbox1 {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.optioncolor {
+  background-color: #33383f;
+  color: white;
+}
+.searchbutton {
+  background: rgb(254, 108, 2);
+  color: white;
+  border: none;
+  height: 6vh;
+  width: 7vw;
+  border-radius: 10px;
+  box-shadow: 0px 3px rgb(247, 78, 2);
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+.searchbutton:hover {
+  background: rgb(255, 140, 84);
+}
+
+.clearbutton {
+  background: rgb(79, 111, 171);
+  color: white;
+  border: none;
+  height: 6vh;
+  width: 7vw;
+  border-radius: 10px;
+  box-shadow: 0px 3px rgb(94, 125, 180);
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.clearbutton:hover {
+  background: rgb(93, 123, 179);
+}
+
+.divide1 {
+  margin-top: 8px;
+}
+
+.dividebutton {
+  margin-top: 25px;
+}
+
+input {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.container {
+  background: rgb(249, 248, 247);
+  color: black;
+  width: 82%;
+  position: relative;
+  left: 9%;
+  top: 8vh;
+}
+
+th {
+  cursor: pointer;
+}
+
+.eventdetail {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(211, 211, 211, 0.2);
+  color: white;
+  font-weight: bold;
+  border-radius: 24px;
+  position: relative;
+  /* top: 29%; */
+  left: 14%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+  width: 66%;
+  height: auto;
+  padding: 25px 44px 35px 44px;
+  backdrop-filter: blur(10px);
+  /* margin-top: 230px; */
+  /* display: none; */
+}
+
+.detailp {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 29px;
+  margin-top: 0;
+  margin-bottom: 66px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.detailheading {
+  font-size: 21px;
+  margin-bottom: 0px;
+  color: rgb(130, 245, 218);
+  margin-top: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.detailsubheading {
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.detaildiv {
+  display: flex;
+}
+
+.afterdetail {
+  color: white;
+}
+
+.down {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 16px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.seatmapdiv {
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  margin-left: 28px;
+}
+
+.artist {
+  text-decoration: none;
+  color: rgb(52, 166, 200);
+  font-size: 15px;
+  margin-top: 5px;
+  /* font-family: arial;
+  font-weight: 100; */
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.moredetails {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 55%;
+  padding: 0px;
+  margin-top: 2%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.moredetailsp {
+  font-family: arial;
+  font-size: 23px;
+  margin-bottom: 0px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.maplocation {
+  position: relative;
+  background-color: rgb(224, 223, 222);
+  left: 14%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+  width: 70%;
+  padding: 0px;
+  /* margin-top: -120px; */
+  color: black;
+  border-radius: 33px;
+  border: 15px solid rgb(224, 223, 222);
+  box-shadow: 0px 0px 0px 1px inset;
+  /* display: none; */
+  height: auto;
+}
+
+.mapdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mapdiv2 {
+  display: flex;
+  /* flex-direction: row; */
+  /* padding: 17px; */
+  /* gap: 165px; */
+  right: 1%;
+  position: relative;
+  font-family: arial;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 124px;
+  /* margin: 0 auto; */
+  margin: 0px 162px;
+}
+
+.addressdiv {
+  /* display: flex;
+  flex-direction: row; */
+  /* margin-left: auto; */
+}
+
+.addressdiv2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.mapdiv3 {
+  margin-right: auto;
+}
+
+.date {
+  padding: 7px 70px 7px 70px;
+  width: auto;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.genre {
+  padding: 10px 45px 10px 45px;
+  width: auto;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.row {
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.rowname {
+  text-align: center;
+  font-size: 14px;
+  padding: 12px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.rowimg {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0px 3px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.venue {
+  padding: 7px 60px 7px 60px;
+  width: auto;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.notfound {
+  background: rgb(249, 248, 247);
+  color: rgb(230, 18, 25);
+  width: 77%;
+  position: relative;
+  left: 9%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 6vh;
+  font-family: "Lato", sans-serif;
+}
+
+.notfound > p {
+  margin: 0px;
+  padding: 7px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.eventname {
+  /* text-decoration: none; */
+  color: black;
+}
+.eventname:hover {
+  color: rgb(65, 54, 162);
+}
+
+.mapdivheading {
+  color: black;
+  /* font-weight: bold; */
+  font-size: 27px;
+  margin-top: 9px;
+  font-family: arial;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.mapcolor {
+  text-decoration: none;
+  color: rgb(81, 133, 147);
+  font-family: "Lato", sans-serif;
+}
+
+.mapcolor:hover {
+  text-decoration: none;
+  color: rgb(80, 79, 121);
+}
+
+/* .block4 {
+  height: auto;
+  overflow: auto;
+  margin-bottom: 3%;
+} */
+
+.address {
+  padding-right: 10px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+.addressfont {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.bg-text.small {
+  min-height: 291px;
+  margin-top: 205px;
+}
+
+.event {
+  padding: 7px 70px 7px 70px;
+  width: auto;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.artist:hover {
+  color: rgb(111, 112, 147);
+}
